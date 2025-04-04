@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amartti - Cardápio</title>
+
+    <!-- Importando o CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fontes Personalizadas -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Cabeçalho com Logo -->
+    <header>
+        <img src="imagens/logo-removebg-preview.png" alt="Amartti - Delícias Gourmet" class="logo">
+    </header>
+
+    <!-- Seção do Cardápio -->
+    <section class="cardapio">
+        <div class="produto" data-nome="Bombom de Avelã" data-preco="5.00">
+            <img src="imagens/bombomdeavelã.webp" alt="Bombom de Avelã">
+            <h2>Bombom de Avelã</h2>
+            <select class="sabor">
+                <option value="Tradicional">Tradicional</option>
+                <option value="Branco">Branco</option>
+                <option value="Amargo">Amargo</option>
+            </select>
+            <input type="number" class="quantidade" min="1" max="100" value="1">
+            <p>R$ 5,00</p>
+            <button onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="produto" data-nome="Trufa de Chocolate" data-preco="4.50">
+            <img src="imagens/trufa.png" alt="Trufa de Chocolate">
+            <h2>Trufa de Chocolate</h2>
+            <select class="sabor">
+                <option value="Ao leite">Ao leite</option>
+                <option value="Meio amargo">Meio amargo</option>
+                <option value="Branca">Branca</option>
+            </select>
+            <input type="number" class="quantidade" min="1" max="100" value="1">
+            <p>R$ 4,50</p>
+            <button onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="produto" data-nome="Chupchup Gourmet" data-preco="6.00">
+            <img src="imagens/suquinhos.jpg" alt="Chupchup Gourmet">
+            <h2>Chupchup Gourmet</h2>
+            <select class="sabor">
+                <option value="Morango">Morango</option>
+                <option value="Chocolate">Chocolate</option>
+                <option value="Coco">Coco</option>
+            </select>
+            <input type="number" class="quantidade" min="1" max="100" value="1">
+            <p>R$ 6,00</p>
+            <button onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="produto" data-nome="Brownie" data-preco="7.00">
+            <img src="imagens/brownie.png" alt="Brownie">
+            <h2>Brownie</h2>
+            <select class="sabor">
+                <option value="Chocolate">Chocolate</option>
+                <option value="Nozes">Nozes</option>
+                <option value="Doce de Leite">Doce de Leite</option>
+            </select>
+            <input type="number" class="quantidade" min="1" max="100" value="1">
+            <p>R$ 7,00</p>
+            <button onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="produto" data-nome="Mini Donuts" data-preco="5.50">
+            <img src="imagens/mini_donuts.png" alt="Mini Donuts">
+            <h2>Mini Donuts</h2>
+            <select class="sabor">
+                <option value="Chocolate">Chocolate</option>
+                <option value="Macadâmia">Macadâmia</option>
+                <option value="Nutella">Nutella</option>
+            </select>
+            <input type="number" class="quantidade" min="1" max="100" value="1">
+            <p>R$ 5,50</p>
+            <button onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="produto" data-nome="Brigadeiro Gourmet" data-preco="3.50">
+            <img src="imagens/brigadeiro.png" alt="Brigadeiro Gourmet">
+            <h2>Brigadeiro Gourmet</h2>
+            <select class="sabor">
+                <option value="Tradicional">Tradicional</option>
+                <option value="Chocolate Branco">Chocolate Branco</option>
+                <option value="Ovomaltine">Ovomaltine</option>
+            </select>
+            <input type="number" class="quantidade" min="1" max="100" value="1">
+            <p>R$ 3,50</p>
+            <button onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="produto" data-nome="Brownie" data-preco="7.00">
+            <img src="imagens/brownie.png" alt="Brownie">
+            <h2>Brownie</h2>
+            <select class="sabor">
+                <option value="Chocolate">Chocolate</option>
+                <option value="Nozes">Nozes</option>
+                <option value="Doce de Leite">Doce de Leite</option>
+            </select>
+            <input type="number" class="quantidade" min="1" max="100" value="1">
+            <p>R$ 7,00</p>
+            <button onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="produto" data-nome="Brownie" data-preco="7.00">
+            <img src="imagens/brownie.png" alt="Brownie">
+            <h2>Brownie</h2>
+            <select class="sabor">
+                <option value="Chocolate">Chocolate</option>
+                <option value="Nozes">Nozes</option>
+                <option value="Doce de Leite">Doce de Leite</option>
+            </select>
+            <input type="number" class="quantidade" min="1" max="100" value="1">
+            <p>R$ 7,00</p>
+            <button onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+        </div>
+    </section>
+
+    <section class="carrinho">
+        <h2>Carrinho de Compras</h2>
+        <ul id="lista-carrinho"></ul>
+        <p id="total">Total: R$ 0,00</p>
+    </section>
+
+    <label for="metodo-pagamento">Forma de Pagamento:</label>
+    <select id="metodo-pagamento">
+        <option value="dinheiro">Dinheiro</option>
+        <option value="cartao">Cartão</option>
+        <option value="pix">PIX</option>
+    </select>
+
+    <label for="tipo-retirada">Retirada ou Entrega?</label>
+    <select id="tipo-retirada" onchange="verificarEntrega()">
+        <option value="retirada">Retirada</option>
+        <option value="entrega">Entrega</option>
+    </select>
+
+    <div id="endereco-container" style="display: none;">
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" placeholder="Digite seu endereço">
+    </div>
+
+    <button onclick="finalizarPedido()">Fazer Pedido</button>
+    <script src="script.js"></script>
+</body>
+</html>
